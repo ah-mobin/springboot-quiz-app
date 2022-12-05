@@ -12,6 +12,35 @@
 </head>
 <body>
 
+    <!--  import navbar  -->
+    <div th:insert="navbar.html :: navbar"></div>
+
+    <main>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="img-block text-center w-50">
+                <img th:src="@{/images/exam.svg}" class="img-fluid w-50" alt="">
+            </div>
+
+            <div class="form-block w-50">
+                <h3 class="text-center">Spring Boot Quiz App</h3>
+
+                <div class="bg-dark w-75 p-4">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control">
+                        </div>
+                        <button type="button" class="mt-2 btn btn-warning w-100">Start Quiz</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <div th:insert="footer.html :: footer"></div>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
