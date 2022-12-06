@@ -23,16 +23,17 @@
         <div class="form-block">
             <h2 class="mb-3 text-center">Spring Boot Quiz App</h2>
 
-            <form class="card bg-dark py-5 px-4" action="">
+            <form action="/quiz" method="POST" class="card bg-dark py-5 px-4">
                 <p class="text-light">Enter Your Name</p>
                 <input type="text" name="name" id="name" class="form-control">
+                <p class="text-warning mt-1" th:if="${warning}" th:text="${warning}"></p>
                 <button type="submit" class="mt-2 btn btn-warning w-100">Start Quiz</button>
             </form>
         </div>
 
     </main>
 
-
+    <!--  import footer  -->
     <div th:insert="~{footer :: footer}"></div>
 
 <!-- Bootstrap JS -->
