@@ -15,8 +15,27 @@
     <!--  import navbar  -->
     <div th:insert="~{navbar :: navbar}"></div>
 
-    <main class="container main-container">
+    <main class="container my-5">
 
+        <h1 class="text-center bg-danger text-light mb-5">Score Board</h1>
+
+        <div class="bg-dark">
+            <table class="table table-border text-light">
+                <tr>
+                    <td>Participant</td>
+                    <td>Total Correct</td>
+                    <td>Total Incorrect</td>
+                    <td>Total Questions</td>
+                </tr>
+
+                <tr th:each="score : ${scores}">
+                    <td th:text="${score.name}"></td>
+                    <td th:text="${score.totalCorrect}"></td>
+                    <td th:text="5 - ${score.totalCorrect}"></td>
+                    <td th:text="5"></td>
+                </tr>
+            </table>
+        </div>
 
 
     </main>

@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.List;
+
 @Controller
 public class PageController {
 
@@ -62,8 +64,10 @@ public class PageController {
     }
 
 
-    @PostMapping("/scores")
-    public String scores(){
+    @GetMapping("/scores")
+    public String scores(Model model){
+        List<Result> scores = questionService.getResults();
+        model.addAttribute("scores",scores);
         return "scoreboard";
     }
 }
