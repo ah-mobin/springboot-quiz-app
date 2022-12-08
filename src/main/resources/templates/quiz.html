@@ -19,7 +19,7 @@
 
     <h1 class="bg-info text-dark">Only Select The Correct Answer</h1>
 
-    <form action="" method="post" th:object="${questionForm}">
+    <form action="quiz-submit" method="post" th:object="${questionForm}">
         <div class="ques-block bg-dark text-light" th:each="ques, i: ${questionForm.questions}">
             <p class="title" th:text="${ques.title}"></p>
 

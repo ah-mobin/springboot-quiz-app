@@ -15,8 +15,30 @@
     <!--  import navbar  -->
     <div th:insert="~{navbar :: navbar}"></div>
 
-    <main class="container main-container">
+    <main class="container py-5 px-4">
 
+        <div class="card bg-dark text-light py-5 px-4 mx-auto">
+
+            <h3 class="bg-danger text-center mb-5 p-2">Your Score</h3>
+
+            <div class="d-flex justify-content-center">
+                <p>Participant name: &nbsp;&nbsp; <span th:if="${result}" th:text="${result.name}"></span></p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <p class="my-3">Total correct answer: &nbsp;&nbsp; <span th:if="${result}" th:text="${result.totalCorrect}"></span></p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <p>Total incorrect: &nbsp;&nbsp; <span th:if="${result}" th:text="5 - ${result.totalCorrect}"></span></p>
+            </div>
+
+            <div class="d-flex justify-content-between mt-5">
+                <a th:href="@{scores}" class="btn btn-success w-50">View Scores</a>
+                <a th:href="@{/}" class="btn btn-outline-info w-25">Back To Home</a>
+            </div>
+
+        </div>
 
 
     </main>

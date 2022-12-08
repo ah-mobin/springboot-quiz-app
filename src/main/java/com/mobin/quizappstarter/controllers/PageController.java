@@ -60,4 +60,10 @@ public class PageController {
 
         return modelAndView;
     }
+
+
+    @PostMapping("/scores")
+    public String scores(){
+        return "scoreboard";
+    }
 }
