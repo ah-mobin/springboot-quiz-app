@@ -1,4 +1,4 @@
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(id, title, optionA, optionB, optionC, correct, chose)
 values(
           1,
           'What is a correct syntax to output "Hello World" in Java?',
@@ -9,7 +9,7 @@ values(
           -1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(id, title, optionA, optionB, optionC, correct, chose)
 values(
           2,
           'Java is short for "JavaScript."',
@@ -20,7 +20,7 @@ values(
           -1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(id, title, optionA, optionB, optionC, correct, chose)
 values(
           3,
           'How do you insert COMMENTS in Java code?',
@@ -31,7 +31,7 @@ values(
           -1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(id, title, optionA, optionB, optionC, correct, chose)
 values(
           4,
           'Which data type is used to create a variable that should store text?',
@@ -42,7 +42,7 @@ values(
           -1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(id, title, optionA, optionB, optionC, correct, chose)
 values(
           5,
           'How do you create a variable with the numeric value 5?',
@@ -53,7 +53,7 @@ values(
           -1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(id, title, optionA, optionB, optionC, correct, chose)
 values(
           6,
           'How do you create a variable with the floating number 2.8?',
@@ -64,7 +64,7 @@ values(
           -1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(id, title, optionA, optionB, optionC, correct, chose)
 values(
           7,
           'Which method can be used to find the length of a string?',
@@ -75,7 +75,7 @@ values(
           -1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(id, title, optionA, optionB, optionC, correct, chose)
 values(
           8,
           'Which operator is used to add together two values?',
@@ -86,7 +86,7 @@ values(
           -1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(id, title, optionA, optionB, optionC, correct, chose)
 values(
           9,
           'The value of a string variable can be surrounded by single quotes.',
@@ -97,7 +97,7 @@ values(
           -1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(id, title, optionA, optionB, optionC, correct, chose)
 values(
           10,
           'Which operator can be used to compare two values?',
